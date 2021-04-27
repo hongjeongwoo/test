@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+​
+
+
+
+
+
+<header th:fragment="headerFragment">
+
+​<script th:inline="javascript">
+$(document).ready(
+	function()
+	{
+		var data="";
+		
+		/*(function()
+				{
+					$.ajax(
+					{
+						type:'post',
+						url:'/aaa',
+						data:data,
+				
+						success:function(data)
+						{
+							console.log("header");
+							
+							
+						},
+						error:function(error){
+							alert(error);
+						}
+						
+					}		
+					
+					);
+				})();*/
+	}
+		);
+</script>
+
+<div style="border: 1px solid green">
+header.html 입니다.
+</div>
+​
+<!-- <a th:href="@{/index}">index 페이지 이동</a>-->
+​<div id="hdiv">
+
+
+</div>
+</header>
+​
+
+</html>
